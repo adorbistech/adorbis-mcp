@@ -1,0 +1,53 @@
+{
+  "name": "@adorbistech/mcp-server",
+  "version": "1.0.0",
+  "description": "Adorbis AI MCP server — one key, every model, auto-routed. Use Adorbis AI from Claude Code, Cursor, Cline, and any MCP-compatible tool.",
+  "main": "dist/index.js",
+  "bin": {
+    "adorbis-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "adorbis",
+    "ai",
+    "llm",
+    "openai",
+    "anthropic",
+    "claude",
+    "cursor",
+    "cline",
+    "claude-code"
+  ],
+  "author": "Adorbis Technologies LLC",
+  "license": "MIT",
+  "homepage": "https://ai.adorbistech.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adorbistech/adorbis-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adorbistech/adorbis-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.zip
+CLAUDE_CODE_PROMPT_mcp_server.md
+'README (1).md'
+'files (1).zip'
