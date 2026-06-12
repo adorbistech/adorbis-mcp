@@ -64,7 +64,7 @@ async function callAdorbis(
     }),
   });
 
-  if (!response.ok) {
+  if (!res.ok) {
     const body = await response.text();
     if (response.status === 401) throw new Error("Invalid API key. Check your ADORBIS_API_KEY.");
     if (response.status === 402) throw new Error("Insufficient credits. Top up at https://ai.adorbistech.com/dashboard");
@@ -96,7 +96,7 @@ async function checkBalance(): Promise<{
     }),
   });
 
-  if (!response.ok) throw new Error(`API error (${res.status})`);
+  if (!res.ok) throw new Error(`API error (${res.status})`);
 
   // Balance is returned in response headers or body depending on version
   const data = await res.json() as any;
