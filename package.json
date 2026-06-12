@@ -1,6 +1,6 @@
 {
   "name": "@adorbistech/mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adorbis AI MCP server — one key, every model, auto-routed. Use Adorbis AI from Claude Code, Cursor, Cline, and any MCP-compatible tool.",
   "main": "dist/index.js",
   "bin": {

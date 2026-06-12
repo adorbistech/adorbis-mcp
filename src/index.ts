@@ -64,7 +64,7 @@ async function callAdorbis(
     }),
   });
 
-  if (!res.ok) {
+  if (!response.ok) {
     const body = await response.text();
     if (response.status === 401) throw new Error("Invalid API key. Check your ADORBIS_API_KEY.");
     if (response.status === 402) throw new Error("Insufficient credits. Top up at https://ai.adorbistech.com/dashboard");
