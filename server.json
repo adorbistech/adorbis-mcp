@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-16/server.schema.json",
+  "name": "io.github.adorbistech/adorbis-mcp",
+  "description": "Adorbis AI MCP server. One key, 40+ models, auto-routed.",
+  "repository": {
+    "url": "https://github.com/adorbistech/adorbis-mcp",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@adorbistech/mcp-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ADORBIS_API_KEY",
+          "description": "Adorbis API key from ai.adorbistech.com",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
